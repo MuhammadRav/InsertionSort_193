@@ -22,4 +22,10 @@ void input() {                             // procedure input
     cout << "======================" << endl;       // Membuat jarak per baris program
     cout << "Masukkan Element Array" << endl;       // Membuat tampilan susunan data element array
     cout << "======================" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Data ke-" << (i + 1) << ": ";
+        cin >> arr[i];
+    }
 }
