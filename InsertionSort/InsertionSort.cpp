@@ -23,6 +23,7 @@ void input() {                             // procedure input
     cout << "Masukkan Element Array" << endl;       // Membuat tampilan susunan data element array
     cout << "======================" << endl;
 
+
     for (int i = 0; i < n; i++)                     // Menggunakan perulangan for untuk menyimpan data pada array
     {  
         cout << "Data ke-" << (i + 1) << ": ";      // Memasukkan atau menginputkan nilai data n
@@ -44,6 +45,15 @@ void insertionsort() {          // Procedure Insertionsort
         while (j >= 0 && arr[j] > temp)     // 4. looping while dimana nilai j lebih besar sama dengan 0 dan
                                             // arr[j] lebih besar daripada temp
         {
+            arr[j + 1] = arr[j];            // 4a. simpan arr[j] ke dalam variable arr[j+1]
+            j--;                            // 4b. Decrement nilay j by 1
+        }
+
+        arr[j + 1] = temp;                  // 5. simpan nilai temp ke dalam arr[j+1]
+
+
+        cout << "\nPass " << i << ": ";     // output ke layar
+        for (int k = 0; k < n; k++) {       // looping nilai k dimulai dari 0 hingga n-1
 
         }
     }
