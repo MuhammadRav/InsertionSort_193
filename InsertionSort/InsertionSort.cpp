@@ -59,6 +59,7 @@ void insertionsort() {          // Procedure Insertionsort
     }
 }
 
+
 void display() {
     cout << endl;
     cout << "\n=================================" << endl;
@@ -69,4 +70,11 @@ void display() {
         cout << arr[j] << endl
     }
     cout << endl;
+}
+
+int main()
+{
+    input();
+    insertionsort();
+    display();
 }
