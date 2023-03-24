@@ -54,27 +54,27 @@ void insertionsort() {          // Procedure Insertionsort
 
         cout << "\nPass " << i << ": ";     // output ke layar
         for (int k = 0; k < n; k++) {       // looping nilai k dimulai dari 0 hingga n-1
-            cout << arr[k] << " ";
+            cout << arr[k] << " ";          // output ke layar
         }
     }
 }
 
 
-void display() {
-    cout << endl;
-    cout << "\n=================================" << endl;
-    cout << "Element Array yang telah tersusun" << endl;
-    cout << "==================================" << endl;
-
-    for (int j = 0; j < n; j++) {
-        cout << arr[j] << endl;
+void display() {            // Procedure Display
+    cout << endl;                                              // Output baris kosong
+    cout << "\n=================================" << endl;     // Output ke layar
+    cout << "Element Array yang telah tersusun" << endl;        // Output ke layar
+    cout << "==================================" << endl;       // Output ke layar
+    
+    for (int j = 0; j < n; j++) {           // looping dengan j dimulai dari 0 hingga n-1
+        cout << arr[j] << endl;             // Output ke layar
     }
-    cout << endl;
+    cout << endl;                           // Output baris kosong
 }
 
 int main()
 {
-    input();
-    insertionsort();
-    display();
+    input();            // memanggil input
+    insertionsort();     // memanggil insertionsort
+    display();          // memanggil display
 }
