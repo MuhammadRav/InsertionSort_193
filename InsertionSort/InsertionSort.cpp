@@ -10,7 +10,7 @@ void input() {                             // procedure input
         cout << "Masukkan jumlah data pada array : "; // Membuat inputan jumlah element Array
         cin >> n;                                      // Memanggil Variable inputan n
         
-        if (n <= 20) {                                 // Membuat Kondisi n tidak lebih dari 20
+        if (n <= 20) {                                 // Membuat Kondisi n tidak lebih dari sama dengan 20
             break;
         }
         else
